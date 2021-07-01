@@ -7,11 +7,11 @@ class BaseCell extends StatefulWidget {
   final String imageName;
   final String subImageName;
 
-  BaseCell({required this.title,required this.subTitle,required this.imageName,required this.subImageName});
-
+  BaseCell(this.title, this.subTitle, this.imageName, this.subImageName);
 
   @override
   State<StatefulWidget> createState() => _BaseCellState();
+
 }
 
 class _BaseCellState extends State<BaseCell> {
@@ -67,8 +67,8 @@ class _BaseCellState extends State<BaseCell> {
               padding: EdgeInsets.all(10),
               child: Row(
                 children: <Widget>[
-                  widget.subTitle != null ? Text(widget.subTitle) : Text(''),
-                  widget.subImageName != null
+                  widget.subTitle.isNotEmpty ? Text(widget.subTitle) : Text(''),
+                  widget.subImageName.isNotEmpty
                       ? Image(
                     image: AssetImage(widget.subImageName),
                     width: 12,

@@ -97,14 +97,54 @@ class MePageState extends State<MePage> {
                     SizedBox(
                       height: 10,
                     ),
-                    BaseCell(
-                      imageName: 'images/微信 支付.png',
-                      title: '支付',
+                    BaseCell("支付", "", 'images/微信 支付.png', ""),
+                    SizedBox(
+                      height: 10,
                     ),
+                    BaseCell("收藏", "", 'images/微信收藏.png', ""),
+                    Row(
+                      children: <Widget>[
+                        Container(width: 50, height: 0.5, color: Colors.white),
+                        Container(height: 0.5, color: Colors.grey)
+                      ],
+                    ),//分割线
+                    BaseCell("相册", "", 'images/微信相册.png', ""),
+                    Row(
+                      children: <Widget>[
+                        Container(width: 50, height: 0.5, color: Colors.white),
+                        Container(height: 0.5, color: Colors.grey)
+                      ],
+                    ),// 分割线
+                    BaseCell("卡包", "", 'images/微信卡包.png', ""),
+                    Row(
+                      children: <Widget>[
+                        Container(width: 50, height: 0.5, color: Colors.white),
+                        Container(height: 0.5, color: Colors.grey)
+                      ],
+                    ), //分割线
+                    BaseCell("表情", "", 'images/微信表情.png', ""),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    BaseCell("设置", "", 'images/微信设置.png', ""),
                   ],
                 )
             )
-          )
+          ),
+          Container(
+            height: 25,
+            color: Color.fromRGBO(0, 0, 0, 0),
+            margin: EdgeInsets.only(top: 40, right: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Image(
+                  image: AssetImage('images/相机.png'),
+                )
+              ],
+            ),
+          ), //相机
+
         ],
       ),
     );
