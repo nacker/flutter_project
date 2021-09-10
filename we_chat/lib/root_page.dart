@@ -12,7 +12,7 @@ class RootPage extends StatefulWidget {
 class _RootPageState extends State<RootPage> {
   int _currentIndex = 0;
   final PageController _controller = PageController(initialPage: 0);
-  List<Widget> _pages = [ChatPage(), FriendsPage(), DiscoverPage(), MePage()];
+  List<Widget> _pages = [ChatPage(), FriendPage(), DiscoverPage(), MePage()];
 
   Widget build(BuildContext context) {
       return Scaffold(

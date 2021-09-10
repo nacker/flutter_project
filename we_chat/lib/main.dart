@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         highlightColor: Color.fromRGBO(1, 0, 0, 0.0),
         splashColor: Color.fromRGBO(1, 0, 0, 0.0),
         cardColor: Color.fromRGBO(1, 1, 1, 0.65),
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.blue,
       ),
       home: RootPage(),
     );

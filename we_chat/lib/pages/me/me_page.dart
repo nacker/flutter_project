@@ -45,9 +45,18 @@ class MePageState extends State<MePage> {
                       Container(
                         color: Colors.yellow,
                         height: 35,
-                        child: Text(
-                          'Hank',
-                          style: TextStyle(fontSize: 25, color: Colors.black),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              'Nacker',
+                              style: TextStyle(fontSize: 25, color: Colors.black),
+                            ),
+                            Image(
+                              image: AssetImage('images/相机.png'),
+                              width: 25,
+                            )
+                          ],
                         ),
                       ), //昵称
                       Container(
@@ -134,7 +143,7 @@ class MePageState extends State<MePage> {
           Container(
             height: 25,
             color: Color.fromRGBO(0, 0, 0, 0),
-            margin: EdgeInsets.only(top: 40, right: 10),
+            margin: EdgeInsets.only(top: 600, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
